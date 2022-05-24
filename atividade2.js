@@ -2,28 +2,30 @@
 
 //Ex 1
 
-let qtdNumeros = parseFloat(prompt("Quantos numeros deseja digitar"))
-let array = []
+let arr = [];
 
-for (let i = 0; i < qtdNumeros; i++){
-    let a = parseFloat(prompt(`Digite o ${i+1} º numero `))
-    array.push(a)
+let qtdN = parseInt(prompt('Quantos números desejas digitar'));
+
+let soma = 0; 
+
+for (let i = 0; i < qtdN; i++) {
+    let n = parseFloat(prompt(`Informe o ${i+1} n°`));
+    arr.push(n);
+    soma += n
 }
 
-let soma = 0
 
-for( let total of array){
-    soma += total
-}
+let raizQ = arr.map(x => x**(1/2))
+let raizC = arr.map(x => x**(1/3))
+let quad = arr.map(x => x**2)
+let media = soma / qtdN
 
-alert(`soma total dos numeros ${soma}`)
 
-let media = soma / array.length
-
-alert(`Sua média foi ${media.toFixed(2)}`)
-
-//Consegui chegar até aqui tenho que utilizar o metodo map /(Math.pow(5, 4)) e Math.sqrt ( raiz quadrada), e raiz cubica (**)porém daqui em diante não consigo fazer a sisntaxe correta.
-
+alert(`Sua soma total é ${soma}`)
+alert(`Sua média é ${media}`)
+alert(`O resultado da raiz é quadrada ${raizQ}`)
+alert(`O resultado da raiz é cubica é ${raizC}`)
+alert(`O resultado ao quadrado é ${quad}`)
 
 
 
