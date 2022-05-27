@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATIVIDADES JAVASCRIPT</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>lampada</title>
 </head>
 <body>
-    <script src="atividade2.js"></script>
-    <h1></h1>
-    <p></p>
+    <br>
+    <br>
+    <div class="botao">
+        <button onclick="changeSrc('botao')"><h1>Interruptor</h1></button>
+    </div>
+
+    <div class="botao">
+        <img id="botao" src="imagem/apagada.png " alt="Abrir" onclick="changeSrc('botao')" />
+    </div>
+    <div>
+        <h1>Sensor de Presença</h1>
+        <br>
+        <h3>Passe o mouse e veja</h3>
+    </div>
+  
+    <div class="img">
+        <img class="img-d" src="apagada.png" />
+        <img class="img-hover" src="ligada.png" />
+    </div>
+
+
+
+   <script src="atividade3.js"></script>
 </body>
 </html>
+
+
+    
